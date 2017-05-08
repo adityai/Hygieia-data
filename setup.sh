@@ -11,4 +11,4 @@ node utilities/add-dashboard.js
 echo 'Running Add Data scripts...'
 node utilities/add-data.js
 echo 'Done!'
-echo 'Next steps:  Either run gulp serve for development or ./start.sh to start a theia-ui container'
+echo 'Next steps:  From Hygieia/UI, run gulp serve for development'

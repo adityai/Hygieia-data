@@ -10,6 +10,9 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
+    "assert": "^1.4.1",
+    "faker": "^4.1.0",
+    "moment": "^2.18.1",
     "mongodb": "^2.2.24"
   }
 }

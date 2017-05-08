@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
-var Mongo = require('./mongo');
+var Mongo = require('../utilities/mongo');
 var Builds = require('../collections/builds');
 var Commits = require('../collections/commits');
 var CodeQuality = require('../collections/code-quality');

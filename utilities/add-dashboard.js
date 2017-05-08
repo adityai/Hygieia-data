@@ -2,7 +2,7 @@ var MongoClient = require('mongodb').MongoClient;
 var DBRef = require('mongodb').DBRef;
 var ObjectId = require('mongodb').ObjectId;
 var assert = require('assert');
-var Mongo = require('./mongo');
+var Mongo = require('../utilities/mongo');
 var moment = require('moment');
 
 var name = 'My Product';
@@ -50,7 +50,7 @@ var getCollectors = function(name) {
     { "_id" : new ObjectId("5887e6fcd601800006640ea5"), "_class" : "com.capitalone.dashboard.model.Collector", "name" : "Github", "collectorType" : "SCM", "enabled" : true, "online" : true, "lastExecuted" : lastUpdated },
     { "_id" : new ObjectId("5887e6fc52faff0006af6c27"), "_class" : "com.capitalone.dashboard.model.SonarCollector", "sonarServers" : [ "https://sonarqube.com" ], "name" : "Sonar", "collectorType" : "CodeQuality", "enabled" : true, "online" : true, "lastExecuted" : lastUpdated }
   ]
-  
+
   // { "_id" : "5887e6fcdc0e82000696288f", "_class" : "com.capitalone.dashboard.model.UDeployCollector", "udeployServers" : [ "https://udeploy.com" ], "name" : "UDeploy", "collectorType" : "Deployment", "enabled" : true, "online" : true, "lastExecuted" : 1489781870000 },
   // { "_id" : "5887e6fc4cedfd0006eaa27d", "_class" : "com.capitalone.dashboard.model.FeatureCollector", "name" : "Jira", "collectorType" : "ScopeOwner", "enabled" : true, "online" : true, "lastExecuted" : 1489781870000 }
 };

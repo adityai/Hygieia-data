@@ -5,7 +5,7 @@ sleep 7
 echo 'Creating Mongo DB user...'
 docker exec mongodb mongo localhost/admin  --eval 'db.getSiblingDB("dashboard").createUser({user: "db", pwd: "dbpass", roles: [{role: "readWrite", db: "dashboard"}]})'
 echo 'Creating Hygieia API and starting...'
-docker-compose up -d
+docker-compose up -d hygieia-api
 echo 'Running Add Dashboard core scripts...'
 node utilities/add-dashboard.js
 echo 'Running Add Data scripts...'
